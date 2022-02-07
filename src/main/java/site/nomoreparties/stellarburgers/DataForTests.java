@@ -10,17 +10,17 @@ class DataForTests {
     String userName;
     String userPassword;
     String userMail;
-    MainPage burgersSite;
+    ConstructorPage burgersSite;
 
     void getData() {
         // chrome, edge, firefox
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         String typeBrowser = "chrome";
         System.setProperty("selenide.browser", typeBrowser);
         Configuration.browser = typeBrowser;
         Configuration.startMaximized = true;
 
-        burgersSite = open("https://stellarburgers.nomoreparties.site/", MainPage.class);
+        burgersSite = open("https://stellarburgers.nomoreparties.site/", ConstructorPage.class);
         // fake user
         Faker faker = new Faker();
         userName = faker.name().firstName(); // Emory

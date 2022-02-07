@@ -24,7 +24,7 @@ public class UserRegistrationTest extends DataForTests {
     @Feature("Регистрация нового пользователя с валидными данными")
     @DisplayName("Регистрация нового пользователя с валидными данным")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void RegistrationUser() {
+    public void registrationUser() {
         burgersSite.clickEnterInAccount();
         burgersSite.clickLinkRegistration();
         burgersSite.registrationNewUser(userName, userMail, userPassword);
@@ -35,8 +35,7 @@ public class UserRegistrationTest extends DataForTests {
     @Feature("Регистрация нового пользователя с невалидным паролем [5 символов]")
     @DisplayName("Регистрация нового пользователя с невалидным паролем [5 символов]")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void RegistrationUserBadPassword() {
-
+    public void registrationUserBadPassword() {
         burgersSite.clickEnterInAccount();
         burgersSite.clickLinkRegistration();
         burgersSite.registrationNewUser(userName, userMail, "12345");

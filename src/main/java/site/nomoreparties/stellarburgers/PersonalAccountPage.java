@@ -8,15 +8,14 @@ import org.openqa.selenium.support.How;
 
 class PersonalAccountPage extends LoginPage {
 
-    // кнопка 'Выйти' в акаунт пользователя
-    @FindBy(how = How.XPATH, using = "//button[contains(text(),'Выход')]")
+    // кнопка 'Выйти' в акаунт пользователя //button[contains(text(),'Выход')]
+    @FindBy(how = How.XPATH, using = "//button[@type='button' and text()='Выход']")
     SelenideElement buttonExit;
 
     @Step("Клик по кнопке выхода из аккаунта")
     void clickButtonExit(){
-        if (buttonExit.isDisplayed()) {
-            buttonExit.shouldBe(Condition.visible).click();
-        }
+        System.out.println(buttonExit.isDisplayed());
+        buttonExit.shouldBe(Condition.visible).click();
     }
 
     boolean buttonExitOnDisplay(){

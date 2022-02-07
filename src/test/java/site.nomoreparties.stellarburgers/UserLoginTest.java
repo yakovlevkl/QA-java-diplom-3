@@ -30,7 +30,7 @@ public class UserLoginTest extends DataForTests {
     @Feature("Вход по кнопке «Войти в аккаунт» на главной")
     @DisplayName("Вход по кнопке «Войти в аккаунт» на главной")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void LoginViaLogInAccountTest() {
+    public void loginViaLogInAccountTest() {
         burgersSite.clickEnterInAccount();
         burgersSite.loginUser(userMail, userPassword);
         burgersSite.buttonEnterOnDisplay();
@@ -41,7 +41,7 @@ public class UserLoginTest extends DataForTests {
     @Feature("Вход через кнопку «Личный кабинет»")
     @DisplayName("Вход через кнопку «Личный кабинет»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void LoginViaPersonalAccountTest() {
+    public void loginViaPersonalAccountTest() {
         burgersSite.clickButtonPersonalAccount();
         burgersSite.loginUser(userMail, userPassword);
         burgersSite.buttonEnterOnDisplay();
@@ -52,7 +52,7 @@ public class UserLoginTest extends DataForTests {
     @Feature("Вход через кнопку в форме регистрации")
     @DisplayName("Вход через кнопку в форме регистрации")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void LoginViaRegistrationFormTest() {
+    public void loginViaRegistrationFormTest() {
         burgersSite.clickButtonPersonalAccount();
         burgersSite.clickLinkRegistration();
         burgersSite.clickLinkLoginPage();
@@ -65,7 +65,7 @@ public class UserLoginTest extends DataForTests {
     @Feature("Вход через кнопку в форме восстановления пароля")
     @DisplayName("Вход через кнопку в форме восстановления пароля")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
-    public void LoginViaPasswordRecoveryFormTest() {
+    public void loginViaPasswordRecoveryFormTest() {
         burgersSite.clickButtonPersonalAccount();
         burgersSite.clickLinkPasswordRecovery();
         burgersSite.clickLinkLoginFromRecovery();

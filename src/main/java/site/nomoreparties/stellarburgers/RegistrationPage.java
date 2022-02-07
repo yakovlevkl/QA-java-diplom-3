@@ -73,7 +73,7 @@ class RegistrationPage extends PasswordRecoveryPage {
         clickButtonRegistration();
     }
 
-    @Step("Преходим по ссылке на страницу логина")
+    @Step("Переходим по ссылке на страницу логина")
     void clickLinkLoginPage() {
         if (linkLoginPage.isDisplayed()) {
             linkLoginPage.shouldBe(Condition.visible).click();

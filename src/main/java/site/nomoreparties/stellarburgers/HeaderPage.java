@@ -12,7 +12,7 @@ class HeaderPage {
     SelenideElement linkMainPage;
 
     // кнопка Конструктор
-    @FindBy(how = How.CLASS_NAME, using = "Конструктор")
+    @FindBy(how = How.XPATH, using = "//p[text()='Конструктор']")
     SelenideElement buttonConstructor;
 
     // Кнопка Личный кабинет
@@ -20,9 +20,7 @@ class HeaderPage {
     SelenideElement buttonPersonalAccount;
 
     void clickConstructor(){
-        if (buttonConstructor.isDisplayed()) {
-            buttonConstructor.shouldBe(Condition.visible).click();
-        }
+        buttonConstructor.scrollTo().shouldBe(Condition.visible).click();
     }
 
     @Step("Входим в личный кабинет")
