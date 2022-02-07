@@ -19,7 +19,7 @@ class DataForTests {
         System.setProperty("selenide.browser", typeBrowser);
         Configuration.browser = typeBrowser;
         Configuration.startMaximized = true;
-
+        Configuration.headless = true;
         burgersSite = open("https://stellarburgers.nomoreparties.site/", ConstructorPage.class);
         // fake user
         Faker faker = new Faker();
