@@ -44,10 +44,12 @@ class LoginPage extends RegistrationPage {
         return buttonEnter.shouldBe(Condition.visible).exists();
     }
 
+    @Step("email: {email}")
     void setEmail_(String email) {
         fieldEmail_.shouldBe(Condition.visible).setValue(email);
     }
 
+    @Step("password: {password}")
     void setPassword_(String password) {
         fieldPassword_.shouldBe(Condition.visible).setValue(password);
     }

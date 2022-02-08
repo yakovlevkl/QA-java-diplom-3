@@ -30,6 +30,7 @@ class HeaderPage {
         }
     }
 
+    @Step("Клик на логотип Stellar Burgers ")
     void clickLinkMainPage() {
         if (linkMainPage.isDisplayed()) {
             linkMainPage.shouldBe(Condition.visible).click();

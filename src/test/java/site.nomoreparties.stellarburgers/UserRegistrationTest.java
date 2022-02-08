@@ -1,5 +1,4 @@
 package site.nomoreparties.stellarburgers;
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
@@ -38,7 +37,8 @@ public class UserRegistrationTest extends DataForTests {
     public void registrationUserBadPassword() {
         burgersSite.clickEnterInAccount();
         burgersSite.clickLinkRegistration();
-        burgersSite.registrationNewUser(userName, userMail, "12345");
+        userPassword = "12345";
+        burgersSite.registrationNewUser(userName, userMail, userPassword);
         burgersSite.messageWrongPasswordOnDisplay();
     }
 

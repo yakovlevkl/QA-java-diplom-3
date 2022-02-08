@@ -1,6 +1,5 @@
 package site.nomoreparties.stellarburgers;
 
-import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;

@@ -57,14 +57,17 @@ class ConstructorPage extends PersonalAccountPage {
         return buttonPlaceAnOrder.shouldBe(Condition.visible).exists();
     }
 
+    @Step("Клик по разделу Булки")
     void clickButtonBuns(){
         buttonBuns.shouldBe(Condition.visible).click();
     }
 
+    @Step("Клик по булке Флюоресцентная булка R2-D3")
     void clickButtonBunFluorescent(){
         buttonBunFluorescent.shouldBe(Condition.visible).click();
     }
 
+    @Step("Клик по крестику, закрыть карточку товара")
     void clickButtonCloseCard(){
         buttonCloseCard.shouldBe(Condition.visible).click();
     }
@@ -73,6 +76,7 @@ class ConstructorPage extends PersonalAccountPage {
         return buttonBunFluorescent.shouldBe(Condition.visible).exists();
     }
 
+    @Step("Клик по вкладке «Соусы»")
     void clickButtonSauces(){
         buttonSauces.shouldBe(Condition.visible).click();
     }
@@ -81,14 +85,17 @@ class ConstructorPage extends PersonalAccountPage {
         return buttonSauceSpicyX.shouldBe(Condition.visible).exists();
     }
 
+    @Step("Клик по соусу Соус Spicy-X")
     void clickButtonSauceSpicyX(){
         buttonSauceSpicyX.shouldBe(Condition.visible).click();
     }
 
+    @Step("Клик по вкладке «Начинки»")
     void clickButtonFilling(){
         buttonFilling.shouldBe(Condition.visible).click();
     }
 
+    @Step("Клик по начинке Мясо бессмертных моллюсков Protostomia ")
     void clickButtonProtostomia(){
         buttonProtostomia.shouldBe(Condition.visible).click();
     }
