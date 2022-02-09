@@ -41,7 +41,7 @@ public class Helper {
 
 
         // chrome, edge, firefox
-        Configuration.holdBrowserOpen = false;
+        //Configuration.holdBrowserOpen = false;
         String typeBrowser = "chrome";
         System.setProperty("selenide.browser", typeBrowser);
         Configuration.browser = typeBrowser;
