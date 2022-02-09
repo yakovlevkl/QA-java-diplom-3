@@ -47,6 +47,7 @@ public class Helper {
         Configuration.browser = typeBrowser;
         Configuration.startMaximized = true;
         Configuration.headless = true;
+        Configuration.baseUrl = "http://62.84.123.154:4444/wd/hub";
         burgersSite = open(
                  "https://stellarburgers.nomoreparties.site/", ConstructorPage.class);
         //WebDriver burgersSite = getDriver();
