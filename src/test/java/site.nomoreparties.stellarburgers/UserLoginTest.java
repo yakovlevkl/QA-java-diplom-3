@@ -9,7 +9,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class UserLoginTest extends DataForTests {
+import java.net.MalformedURLException;
+
+public class UserLoginTest extends Helper {
     /*
         Проверь:
            - вход по кнопке «Войти в аккаунт» на главной,
@@ -18,8 +20,8 @@ public class UserLoginTest extends DataForTests {
            - вход через кнопку в форме восстановления пароля.
     */
     @Before
-    public void setUp() {
-        getData();
+    public void setUp_() {
+
         // user
         userName = "Emogene";
         userPassword = "123456";

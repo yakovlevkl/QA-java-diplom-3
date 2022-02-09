@@ -8,17 +8,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class UserRegistrationTest extends DataForTests {
+import java.net.MalformedURLException;
+
+public class UserRegistrationTest extends Helper {
     /*
         Проверь:
            - Успешную регистрацию.
            - Ошибку для некорректного пароля. Минимальный пароль — шесть символов.
      */
 
-    @Before
-    public void setUp() {
-        getData();
-    }
 
     @Test
     @Feature("Регистрация нового пользователя с валидными данными")

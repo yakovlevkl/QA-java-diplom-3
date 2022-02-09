@@ -9,7 +9,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ConstructorTest extends DataForTests {
+import java.net.MalformedURLException;
+
+public class ConstructorTest extends Helper {
     /*
     Раздел «Конструктор»
          Проверь, что работают переходы к разделам:
@@ -17,18 +19,13 @@ public class ConstructorTest extends DataForTests {
            - «Соусы»,
            - «Начинки».
     */
-    @Before
-    public void setUp() {
-        getData();
-        burgersSite.clickButtonPersonalAccount();
-        burgersSite.clickConstructor();
-    }
-
     @Test
     @Feature("Раздел «Конструктор» переходы к разделу «Булки»")
     @DisplayName("Раздел «Конструктор» переходы к разделу «Булки»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
     public void constructorBunsTest() {
+        burgersSite.clickButtonPersonalAccount();
+        burgersSite.clickConstructor();
         burgersSite.clickButtonSauces();
         burgersSite.clickButtonBuns();
         burgersSite.clickButtonBunFluorescent();
@@ -40,6 +37,8 @@ public class ConstructorTest extends DataForTests {
     @DisplayName("Раздел «Конструктор» переходы к разделу «Соусы»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
     public void constructorSaucesTest() {
+        burgersSite.clickButtonPersonalAccount();
+        burgersSite.clickConstructor();
         burgersSite.clickButtonSauces();
         burgersSite.clickButtonSauceSpicyX();
         burgersSite.clickButtonCloseCard();
@@ -50,6 +49,8 @@ public class ConstructorTest extends DataForTests {
     @DisplayName("Раздел «Конструктор» переходы к разделу «Начинки»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
     public void constructorFillingTest() {
+        burgersSite.clickButtonPersonalAccount();
+        burgersSite.clickConstructor();
         burgersSite.clickButtonFilling();
         burgersSite.clickButtonProtostomia();
         burgersSite.clickButtonCloseCard();

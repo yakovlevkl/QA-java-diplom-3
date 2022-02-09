@@ -9,7 +9,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PageTransitionsTest extends DataForTests {
+import java.net.MalformedURLException;
+
+public class PageTransitionsTest extends Helper {
     /*
     Проверь:
         Переход в личный кабинет
@@ -20,8 +22,8 @@ public class PageTransitionsTest extends DataForTests {
             - Проверь выход по кнопке «Выйти» в личном кабинете.
 */
     @Before
-    public void setUp() {
-        getData();
+    public void setUp_() {
+
         // user
         userName = "Emogene";
         userPassword = "123456";
