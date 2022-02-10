@@ -1,10 +1,8 @@
 package site.nomoreparties.stellarburgers;
 
-import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.junit4.DisplayName;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,8 +15,7 @@ public class ConstructorTest extends DataForTests {
            - «Начинки».
     */
     @Before
-    public void setUp() {
-        getData();
+    public void setUp_() {
         burgersSite.clickButtonPersonalAccount();
         burgersSite.clickConstructor();
     }
@@ -54,10 +51,4 @@ public class ConstructorTest extends DataForTests {
         burgersSite.clickButtonCloseCard();
     }
 
-    @After
-    public void rollBck() {
-        Allure.attachment("User name: ", userName);
-        Allure.attachment("User password: ", userPassword);
-        Allure.attachment("User mail: ", userMail);
-    }
 }
