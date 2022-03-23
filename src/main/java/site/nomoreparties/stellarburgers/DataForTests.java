@@ -20,9 +20,11 @@ class DataForTests extends BaseUrls{
     private void configBrowser() {
         // chrome, edge, firefox
         Configuration.holdBrowserOpen = false;
-        String typeBrowser = "firefox";
-        System.setProperty("selenide.browser", typeBrowser);
-        Configuration.browser = typeBrowser;
+        //String typeBrowser = ;
+        //System.setProperty("selenide.browser", typeBrowser);
+        //System.setProperty()
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "96.0.4664.18";
         Configuration.startMaximized = true;
         Configuration.headless = false;
         burgersSite = open(getSiteUrl(), ConstructorPage.class);
