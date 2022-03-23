@@ -20,7 +20,7 @@ class DataForTests extends BaseUrls{
     private void configBrowser() {
         // chrome, edge, firefox
         Configuration.holdBrowserOpen = false;
-        String typeBrowser = "chrome";
+        String typeBrowser = "firefox";
         System.setProperty("selenide.browser", typeBrowser);
         Configuration.browser = typeBrowser;
         //Configuration.startMaximized = true;
