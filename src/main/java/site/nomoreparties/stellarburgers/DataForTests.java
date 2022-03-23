@@ -23,7 +23,7 @@ class DataForTests extends BaseUrls{
         String typeBrowser = "chrome";
         System.setProperty("selenide.browser", typeBrowser);
         Configuration.browser = typeBrowser;
-        //Configuration.startMaximized = true;
+        Configuration.startMaximized = true;
         Configuration.headless = true;
         burgersSite = open(getSiteUrl(), ConstructorPage.class);
     }
