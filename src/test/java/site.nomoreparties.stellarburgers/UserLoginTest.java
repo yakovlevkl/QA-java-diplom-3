@@ -45,7 +45,9 @@ public class UserLoginTest extends Helper {
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
     public void loginViaPersonalAccountTest() {
         burgersSite.clickButtonPersonalAccount();
-        burgersSite.loginUser(userMail, userPassword);
+        // Сломаю тут тест для примера
+        // burgersSite.loginUser(userMail, userPassword);
+        burgersSite.loginUser("fff@fff.ru", userPassword);
         burgersSite.buttonEnterOnDisplay();
         burgersSite.buttonPlaceAnOrderOnDisplay();
     }
