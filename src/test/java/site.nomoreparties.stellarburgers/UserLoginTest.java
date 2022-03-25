@@ -4,6 +4,7 @@ import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Issue;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -40,6 +41,7 @@ public class UserLoginTest extends Helper {
     }
 
     @Test
+    @Issue("3")
     @Feature("Вход через кнопку «Личный кабинет»")
     @DisplayName("Вход через кнопку «Личный кабинет»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
