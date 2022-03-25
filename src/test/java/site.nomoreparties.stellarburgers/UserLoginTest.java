@@ -10,8 +10,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.net.MalformedURLException;
-
 public class UserLoginTest extends Helper {
     /*
         Проверь:
