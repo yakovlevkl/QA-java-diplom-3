@@ -39,6 +39,7 @@ public class UserLoginTest extends Helper {
     }
 
     @Test
+    @Issue("3")
     @Feature("Вход через кнопку «Личный кабинет»")
     @DisplayName("Вход через кнопку «Личный кабинет»")
     @Description("Test for https://stellarburgers.nomoreparties.site frontend")
